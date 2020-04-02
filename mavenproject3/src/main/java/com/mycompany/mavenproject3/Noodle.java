@@ -10,14 +10,14 @@ package com.mycompany.mavenproject3;
  * @author HP
  */
 public class Noodle {
-    public int AA,BB,CC,DD,EE;
+    public int Noodlee;
     
     public int Nood1(){
-        return AA*2;
+        return Noodlee*2;
     }
 
     public int Nood7(){
-        return AA*3;
+        return Noodlee*3;
     }
 
     

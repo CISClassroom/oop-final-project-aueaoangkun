@@ -80,6 +80,10 @@ public class Main extends javax.swing.JFrame {
         totalrice = new javax.swing.JTextField();
         totalfood = new javax.swing.JTextField();
         totaldrink = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("From");
@@ -432,8 +436,33 @@ public class Main extends javax.swing.JFrame {
         ot.setFont(new java.awt.Font("BrowalliaUPC", 0, 18)); // NOI18N
         out.setViewportView(ot);
 
+        total.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
         jLabel37.setFont(new java.awt.Font("AngsanaUPC", 1, 24)); // NOI18N
         jLabel37.setText("ราคารวมทั้งหมด");
+
+        totalrice.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
+        totalfood.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
+        totaldrink.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
+        jLabel13.setFont(new java.awt.Font("AngsanaUPC", 1, 24)); // NOI18N
+        jLabel13.setText("ราคาข้าว");
+
+        jLabel18.setFont(new java.awt.Font("AngsanaUPC", 1, 24)); // NOI18N
+        jLabel18.setText("ราคาก๋วยเตี๋ยว");
+
+        jLabel20.setFont(new java.awt.Font("AngsanaUPC", 1, 24)); // NOI18N
+        jLabel20.setText("ราคาเครื่องดื่ม");
+
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton1.setText("ยืนยัน");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout ResultLayout = new javax.swing.GroupLayout(Result);
         Result.setLayout(ResultLayout);
@@ -450,14 +479,20 @@ public class Main extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(ResultLayout.createSequentialGroup()
-                        .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(ResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel37, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
+                            .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(ResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(total, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)
                             .addComponent(totalrice)
                             .addComponent(totalfood)
                             .addComponent(totaldrink))))
-                .addContainerGap(216, Short.MAX_VALUE))
+                .addGap(33, 33, 33)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(38, Short.MAX_VALUE))
         );
         ResultLayout.setVerticalGroup(
             ResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -470,15 +505,23 @@ public class Main extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(out, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(totalrice, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(ResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
+                    .addComponent(totalrice))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(totalfood, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(ResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
+                    .addComponent(totalfood))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(totaldrink, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(ResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(totaldrink)
+                    .addComponent(jLabel20, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE))
                 .addGap(14, 14, 14)
                 .addGroup(ResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(total)
-                    .addComponent(jLabel37, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE))
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
+                    .addGroup(ResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(total)
+                        .addComponent(jLabel37, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
@@ -596,13 +639,13 @@ public class Main extends javax.swing.JFrame {
         }
         Noodle MUCH = new Noodle();
         if(FOOD == "เส้นเล็กหมู"){
-            MUCH.AA = 40;
-            Result2 = MUCH.AA;
+            MUCH.Noodlee = 40;
+            Result2 = MUCH.Noodlee;
             if(ADD2 == "-"){
                 Result2 = 0;
             }
             else if(ADD2 == "1"){
-                Result2 = MUCH.AA;
+                Result2 = MUCH.Noodlee;
             }
             else if(ADD2 == "2"){
                 Result2 = MUCH.Nood1();
@@ -611,13 +654,13 @@ public class Main extends javax.swing.JFrame {
                 Result2 = MUCH.Nood7();      
             }totalfood.setText(""+Result2);
         }else if(FOOD == "เส้นหมี่หมู"){
-            MUCH.AA = 40;
-            Result2 = MUCH.AA;
+            MUCH.Noodlee = 40;
+            Result2 = MUCH.Noodlee;
             if(ADD2 == "-"){
                 Result2 = 0;
             }
             else if(ADD2 == "1"){
-                Result2 = MUCH.AA;
+                Result2 = MUCH.Noodlee;
             }
             else if(ADD2 == "2"){
                 Result2 = MUCH.Nood1();
@@ -626,13 +669,13 @@ public class Main extends javax.swing.JFrame {
                 Result2 = MUCH.Nood7();      
             }totalfood.setText(""+Result2);
         }else if(FOOD == "เส้นใหญ่หมู"){
-            MUCH.AA = 40;
-            Result2 = MUCH.AA;
+            MUCH.Noodlee = 40;
+            Result2 = MUCH.Noodlee;
             if(ADD2 == "-"){
                 Result2 = 0;
             }
             else if(ADD2 == "1"){
-                Result2 = MUCH.AA;
+                Result2 = MUCH.Noodlee;
             }
             else if(ADD2 == "2"){
                 Result2 = MUCH.Nood1();
@@ -641,13 +684,13 @@ public class Main extends javax.swing.JFrame {
                 Result2 = MUCH.Nood7();      
             }totalfood.setText(""+Result2);
         }else if(FOOD == "บะหมี่หมูแดง"){
-            MUCH.AA = 40;
-            Result2 = MUCH.AA;
+            MUCH.Noodlee = 40;
+            Result2 = MUCH.Noodlee;
             if(ADD2 == "-"){
                 Result2 = 0;
             }
             else if(ADD2 == "1"){
-                Result2 = MUCH.AA;
+                Result2 = MUCH.Noodlee;
             }
             else if(ADD2 == "2"){
                 Result2 = MUCH.Nood1();
@@ -656,13 +699,13 @@ public class Main extends javax.swing.JFrame {
                 Result2 = MUCH.Nood7();      
             }totalfood.setText(""+Result2);
         }else if(FOOD == "สุกี้หมู"){
-            MUCH.AA = 40;
-            Result2 = MUCH.AA;
+            MUCH.Noodlee = 40;
+            Result2 = MUCH.Noodlee;
             if(ADD2 == "-"){
                 Result2 = 0;
             }
             else if(ADD2 == "1"){
-                Result2 = MUCH.AA;
+                Result2 = MUCH.Noodlee;
             }
             else if(ADD2 == "2"){
                 Result2 = MUCH.Nood1();
@@ -671,13 +714,13 @@ public class Main extends javax.swing.JFrame {
                 Result2 = MUCH.Nood7();      
             }totalfood.setText(""+Result2);
         }else if(FOOD == "สุกี้แห้ง"){
-            MUCH.AA = 40;
-            Result2 = MUCH.AA;
+            MUCH.Noodlee = 40;
+            Result2 = MUCH.Noodlee;
             if(ADD2 == "-"){
                 Result2 = 0;
             }
             else if(ADD2 == "1"){
-                Result2 = MUCH.AA;
+                Result2 = MUCH.Noodlee;
             }
             else if(ADD2 == "2"){
                 Result2 = MUCH.Nood1();
@@ -756,6 +799,10 @@ public class Main extends javax.swing.JFrame {
         total.setText(TOTAL+" บาท");
     }//GEN-LAST:event_menuMouseClicked
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -803,16 +850,20 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> add3;
     private javax.swing.JComboBox<String> drink;
     private javax.swing.JComboBox<String> food;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
