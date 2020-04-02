@@ -5,6 +5,8 @@
  */
 package com.mycompany.mavenproject3;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author HP
@@ -560,237 +562,10 @@ public class Main extends javax.swing.JFrame {
         ot.setText(""+RICE+"\t\tจำนวน "+ADD1+" กล่อง\n"+FOOD+"\t\tจำนวน "+ADD2+" กล่อง\n"+DRINK+"\t\tจำนวน "+ADD3+" กล่อง");        
         this.setTitle("Menu");
         
-        Food much = new Food();
-        if(RICE == "กะเพราหมูสับ"){
-            much.A = 40;
-            Result = much.A;
-            if(ADD1 == "-"){
-                Result = 0;
-            }
-            else if(ADD1 == "1"){
-                Result = much.A;
-            }
-            else if(ADD1 == "2"){
-                Result = much.Rice1();
-            }
-            else if(ADD1 == "3"){
-                Result = much.Rice7();      
-            }totalrice.setText(""+Result);
-        }else if(RICE == "คะน้าหมูกรอบ"){
-            much.B = 50;
-            Result = much.B;
-            if(ADD1 == "-"){
-                Result = 0;
-            }
-            else if(ADD1 == "1"){
-                Result = much.B;
-            }
-            else if(ADD1 == "2"){
-                Result = much.Rice2();
-            }
-            else if(ADD1 == "3"){
-                Result = much.Rice8();      
-            }totalrice.setText(""+Result);
-        }else if(RICE == "ผัดพริกแกง"){
-            much.C = 40;
-            Result = much.C;
-            if(ADD1 == "-"){
-                Result = 0;
-            }
-            else if(ADD1 == "1"){
-                Result = much.C;
-            }
-            else if(ADD1 == "2"){
-                Result = much.Rice3();
-            }
-            else if(ADD1 == "3"){
-                Result = much.Rice9();      
-            }totalrice.setText(""+Result);
-        }else if(RICE == "กะเพราไก่"){
-            much.D = 40;
-            Result = much.D;
-            if(ADD1 == "-"){
-                Result = 0;
-            }
-            else if(ADD1 == "1"){
-                Result = much.D;
-            }
-            else if(ADD1 == "2"){
-                Result = much.Rice4();
-            }
-            else if(ADD1 == "3"){
-                Result = much.Rice10();      
-            }totalrice.setText(""+Result);
-        }else if(RICE == "กะเพราหมูกรอบ"){
-            much.E = 50;
-            Result = much.E;
-            if(ADD1 == "-"){
-                Result = 0;
-            }
-            else if(ADD1 == "1"){
-                Result = much.E;
-            }
-            else if(ADD1 == "2"){
-                Result = much.Rice5();
-            }
-            else if(ADD1 == "3"){
-                Result = much.Rice11();      
-            }totalrice.setText(""+Result);
-        }
-        Noodle MUCH = new Noodle();
-        if(FOOD == "เส้นเล็กหมู"){
-            MUCH.Noodlee = 40;
-            Result2 = MUCH.Noodlee;
-            if(ADD2 == "-"){
-                Result2 = 0;
-            }
-            else if(ADD2 == "1"){
-                Result2 = MUCH.Noodlee;
-            }
-            else if(ADD2 == "2"){
-                Result2 = MUCH.Nood1();
-            }
-            else if(ADD2 == "3"){
-                Result2 = MUCH.Nood7();      
-            }totalfood.setText(""+Result2);
-        }else if(FOOD == "เส้นหมี่หมู"){
-            MUCH.Noodlee = 40;
-            Result2 = MUCH.Noodlee;
-            if(ADD2 == "-"){
-                Result2 = 0;
-            }
-            else if(ADD2 == "1"){
-                Result2 = MUCH.Noodlee;
-            }
-            else if(ADD2 == "2"){
-                Result2 = MUCH.Nood1();
-            }
-            else if(ADD2 == "3"){
-                Result2 = MUCH.Nood7();      
-            }totalfood.setText(""+Result2);
-        }else if(FOOD == "เส้นใหญ่หมู"){
-            MUCH.Noodlee = 40;
-            Result2 = MUCH.Noodlee;
-            if(ADD2 == "-"){
-                Result2 = 0;
-            }
-            else if(ADD2 == "1"){
-                Result2 = MUCH.Noodlee;
-            }
-            else if(ADD2 == "2"){
-                Result2 = MUCH.Nood1();
-            }
-            else if(ADD2 == "3"){
-                Result2 = MUCH.Nood7();      
-            }totalfood.setText(""+Result2);
-        }else if(FOOD == "บะหมี่หมูแดง"){
-            MUCH.Noodlee = 40;
-            Result2 = MUCH.Noodlee;
-            if(ADD2 == "-"){
-                Result2 = 0;
-            }
-            else if(ADD2 == "1"){
-                Result2 = MUCH.Noodlee;
-            }
-            else if(ADD2 == "2"){
-                Result2 = MUCH.Nood1();
-            }
-            else if(ADD2 == "3"){
-                Result2 = MUCH.Nood7();      
-            }totalfood.setText(""+Result2);
-        }else if(FOOD == "สุกี้หมู"){
-            MUCH.Noodlee = 40;
-            Result2 = MUCH.Noodlee;
-            if(ADD2 == "-"){
-                Result2 = 0;
-            }
-            else if(ADD2 == "1"){
-                Result2 = MUCH.Noodlee;
-            }
-            else if(ADD2 == "2"){
-                Result2 = MUCH.Nood1();
-            }
-            else if(ADD2 == "3"){
-                Result2 = MUCH.Nood7();      
-            }totalfood.setText(""+Result2);
-        }else if(FOOD == "สุกี้แห้ง"){
-            MUCH.Noodlee = 40;
-            Result2 = MUCH.Noodlee;
-            if(ADD2 == "-"){
-                Result2 = 0;
-            }
-            else if(ADD2 == "1"){
-                Result2 = MUCH.Noodlee;
-            }
-            else if(ADD2 == "2"){
-                Result2 = MUCH.Nood1();
-            }
-            else if(ADD2 == "3"){
-                Result2 = MUCH.Nood7();      
-            }totalfood.setText(""+Result2);
-        }
+        
         Drink Drk = new Drink();
-        if(DRINK == "น้ำอัดลม"){
-            Drk.DRINK2 = 20;
-            Result3 = Drk.DRINK2;
-            if(ADD3 == "-"){
-                Result3 = 0;
-            }
-            else if(ADD3 == "1"){
-                Result3 = Drk.DRINK2;
-            }
-            else if(ADD3 == "2"){
-                Result3 = Drk.DRINK222();
-            }
-            else if(ADD3 == "3"){
-                Result3 = Drk.DRINK555();      
-            }totaldrink.setText(""+Result3);
-        }else if(DRINK == "น้ำเปล่า"){
-            Drk.DRINK1 = 10;
-            Result3 = Drk.DRINK1;
-            if(ADD3 == "-"){
-                Result3 = 0;
-            }
-            else if(ADD3 == "1"){
-                Result3 = Drk.DRINK1;
-            }
-            else if(ADD3 == "2"){
-                Result3 = Drk.DRINK111();
-            }
-            else if(ADD3 == "3"){
-                Result3 = Drk.DRINK444();      
-            }totaldrink.setText(""+Result3);
-        }else if(DRINK == "น้ำเก๊กฮวย"){
-            Drk.DRINK3 = 30;
-            Result3 = Drk.DRINK3;
-            if(ADD3 == "-"){
-                Result3 = 0;
-            }
-            else if(ADD3 == "1"){
-                Result3 = Drk.DRINK3;
-            }
-            else if(ADD3 == "2"){
-                Result3 = Drk.DRINK333();
-            }
-            else if(ADD3 == "3"){
-                Result3 = Drk.DRINK666();      
-            }totaldrink.setText(""+Result3);
-        }else if(DRINK == "น้ำกระเจี๊ยบ"){
-            Drk.DRINK3 = 30;
-            Result3 = Drk.DRINK3;
-            if(ADD3 == "-"){
-                Result3 = 0;
-            }
-            else if(ADD3 == "1"){
-                Result3 = Drk.DRINK3;
-            }
-            else if(ADD3 == "2"){
-                Result3 = Drk.DRINK333();
-            }
-            else if(ADD3 == "3"){
-                Result3 = Drk.DRINK666();      
-            }totaldrink.setText(""+Result3);
-        }
+        totalrice.setText("");
+        
         
         int Re = Integer.parseInt(totalrice.getText());
         int Re2 = Integer.parseInt(totalfood.getText());
@@ -800,7 +575,7 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_menuMouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
+        JOptionPane.showMessageDialog(null, "Thank You :D");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

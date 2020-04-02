@@ -785,10 +785,8 @@
                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="jButton1" pref="45" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="total" max="32767" attributes="0"/>
-                          <Component id="jLabel37" pref="45" max="32767" attributes="0"/>
-                      </Group>
+                      <Component id="total" max="32767" attributes="0"/>
+                      <Component id="jLabel37" pref="45" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace pref="23" max="32767" attributes="0"/>
               </Group>

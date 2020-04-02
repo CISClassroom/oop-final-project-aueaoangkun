@@ -10,24 +10,10 @@ package com.mycompany.mavenproject3;
  * @author HP
  */
 public class Drink {
-    public int DRINK1,DRINK2,DRINK3;
+    public static int DRINK1(int[] DK);{
+    for (int i = 0; i < DK.lenght; DK++){
+        DK[i] = DK[i] * 2}
+    }
     
-    public int DRINK111(){
-        return DRINK1*2;
-    }
-    public int DRINK222(){
-        return DRINK2*2;
-    }
-    public int DRINK333(){
-        return DRINK3*2;
-    }
-    public int DRINK444(){
-        return DRINK1*3;
-    }
-    public int DRINK555(){
-        return DRINK2*3;
-    }
-    public int DRINK666(){
-        return DRINK3*3;
-    }  
+    
 }
